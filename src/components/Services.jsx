@@ -33,7 +33,7 @@ export default function Services() {
               <p className={`text-sm leading-relaxed flex-1 ${featured ? 'text-navy-300' : 'text-navy-500'}`}>{desc}</p>
               <div className={`flex items-center justify-between mt-5 pt-4 ${featured ? 'border-t border-navy-700' : 'border-t border-navy-50'}`}>
                 <span className={`text-sm font-semibold ${featured ? 'text-gold-400' : 'text-gold-600'}`}>{price}</span>
-                <a href="#quick-form" className={`text-sm font-medium inline-flex items-center gap-1 ${featured ? 'text-gold-400 hover:text-gold-300' : 'text-navy-400 hover:text-gold-600'}`}>
+                <a href="/#quick-form" className={`text-sm font-medium inline-flex items-center gap-1 ${featured ? 'text-gold-400 hover:text-gold-300' : 'text-navy-400 hover:text-gold-600'}`}>
                   Get Quote <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 
 const LINKS = [
-  { label: 'Services', href: '#services' },
-  { label: 'About', href: '#about' },
-  { label: 'Testimonials', href: '#testimonials' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'Services', href: '/#services' },
+  { label: 'About', href: '/#about' },
+  { label: 'Testimonials', href: '/#testimonials' },
+  { label: 'FAQ', href: '/#faq' },
   { label: 'Blog', href: '/blog', route: true },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 export default function Navbar() {
@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-[36px] inset-x-0 z-50 transition-all ${scrolled ? 'bg-white/95 backdrop-blur shadow-lg shadow-navy-900/5' : ''}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-        <a href="#hero" className="flex items-center gap-2.5">
+        <a href="/" className="flex items-center gap-2.5">
           <img src="/logo.png" alt="Cornerstone Life Advisors" className={`h-10 w-auto ${scrolled ? '' : 'brightness-0 invert'}`} />
         </a>
 

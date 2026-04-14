@@ -19,7 +19,7 @@ export default function FinalCTA() {
           <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl text-lg transition-all hover:shadow-xl active:scale-[0.98]">
             <Calendar className="w-5 h-5" /> Book Free Consultation
           </a>
-          <a href="#quick-form" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-xl text-lg transition-all">
+          <a href="/#quick-form" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-xl text-lg transition-all">
             Get My Free Quote <ArrowRight className="w-5 h-5" />
           </a>
         </div>

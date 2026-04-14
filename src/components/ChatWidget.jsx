@@ -40,7 +40,7 @@ export default function ChatWidget() {
               </div>
             </div>
             <div className="space-y-2 ml-9">
-              <a href="#quote" onClick={() => setOpen(false)} className="flex items-center gap-2.5 w-full px-4 py-2.5 bg-white hover:bg-gold-50 border border-navy-100 rounded-xl text-sm text-navy-700 font-medium">
+              <a href="/#quote" onClick={() => setOpen(false)} className="flex items-center gap-2.5 w-full px-4 py-2.5 bg-white hover:bg-gold-50 border border-navy-100 rounded-xl text-sm text-navy-700 font-medium">
                 <Send className="w-4 h-4 text-gold-500" />Get a free quote
               </a>
               <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 w-full px-4 py-2.5 bg-white hover:bg-gold-50 border border-navy-100 rounded-xl text-sm text-navy-700 font-medium">

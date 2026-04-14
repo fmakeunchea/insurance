@@ -27,7 +27,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-sm">Quick Links</h4>
             <ul className="space-y-2.5 text-sm">
-              {[['Services','#services'],['About','#about'],['Testimonials','#testimonials'],['FAQ','#faq'],['Contact','#contact']].map(([l,h]) => (
+              {[['Services','/#services'],['About','/#about'],['Testimonials','/#testimonials'],['FAQ','/#faq'],['Contact','/#contact']].map(([l,h]) => (
                 <li key={l}><a href={h} className="text-navy-300 hover:text-gold-400 transition-colors">{l}</a></li>
               ))}
               <li><Link to="/blog" className="text-navy-300 hover:text-gold-400 transition-colors">Blog</Link></li>
@@ -37,7 +37,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-sm">Services</h4>
             <ul className="space-y-2.5 text-sm">
               {['Term Life','Whole Life','Final Expense','Family Protection','Retirement','Free Quote'].map(s => (
-                <li key={s}><a href="#services" className="text-navy-300 hover:text-gold-400 transition-colors">{s}</a></li>
+                <li key={s}><a href="/#services" className="text-navy-300 hover:text-gold-400 transition-colors">{s}</a></li>
               ))}
             </ul>
           </div>
@@ -48,7 +48,7 @@ export default function Footer() {
               <li><a href="mailto:hanordinc@gmail.com" className="flex items-center gap-2 text-navy-300 hover:text-gold-400"><Mail className="w-4 h-4" />hanordinc@gmail.com</a></li>
               <li><span className="flex items-center gap-2 text-navy-300"><MapPin className="w-4 h-4" />Fredericksburg, VA</span></li>
             </ul>
-            <a href="#quick-form" className="inline-flex items-center mt-5 px-5 py-2.5 bg-gold-500 hover:bg-gold-600 text-white text-sm font-semibold rounded-lg transition-colors">Get a Free Quote</a>
+            <a href="/#quick-form" className="inline-flex items-center mt-5 px-5 py-2.5 bg-gold-500 hover:bg-gold-600 text-white text-sm font-semibold rounded-lg transition-colors">Get a Free Quote</a>
           </div>
         </div>
       </div>
