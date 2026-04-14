@@ -23,6 +23,8 @@ import BlogPost from './pages/BlogPost';
 import TermLife from './pages/TermLife';
 import WholeLife from './pages/WholeLife';
 import WealthIUL from './pages/WealthIUL';
+import Shop from './pages/Shop';
+import ProductPage from './pages/ProductPage';
 
 function Home() {
   return (
@@ -63,6 +65,8 @@ export default function App() {
           <Route path="/services/term-life" element={<TermLife />} />
           <Route path="/services/whole-life" element={<WholeLife />} />
           <Route path="/services/iul" element={<WealthIUL />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/:slug" element={<ProductPage />} />
         </Routes>
         <Footer />
         <ExitPopup />

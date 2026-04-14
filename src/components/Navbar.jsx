@@ -8,6 +8,7 @@ const LINKS = [
   { label: 'Testimonials', href: '/#testimonials' },
   { label: 'FAQ', href: '/#faq' },
   { label: 'Blog', href: '/blog', route: true },
+  { label: 'Shop', href: '/shop', route: true },
   { label: 'Contact', href: '/#contact' },
 ];
 
