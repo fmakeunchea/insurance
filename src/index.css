@@ -29,3 +29,6 @@
 html { scroll-behavior: smooth; }
 body { -webkit-font-smoothing: antialiased; }
 ::selection { background: rgba(180,153,102,0.2); }
+
+/* Mobile floating CTA spacing */
+@media (max-width: 1023px) { footer { padding-bottom: 4rem; } }

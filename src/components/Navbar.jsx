@@ -26,7 +26,7 @@ export default function Navbar() {
     : 'text-white/80 hover:text-white';
 
   return (
-    <nav className={`fixed top-0 inset-x-0 z-50 transition-all ${scrolled ? 'bg-white/95 backdrop-blur shadow-lg shadow-navy-900/5' : ''}`}>
+    <nav className={`fixed top-[36px] inset-x-0 z-50 transition-all ${scrolled ? 'bg-white/95 backdrop-blur shadow-lg shadow-navy-900/5' : ''}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
         <a href="#hero" className="flex items-center gap-2.5">
           <img src="/logo.png" alt="Cornerstone Life Advisors" className={`h-10 w-auto ${scrolled ? '' : 'brightness-0 invert'}`} />
