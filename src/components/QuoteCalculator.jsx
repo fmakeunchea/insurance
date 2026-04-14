@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Calculator, ArrowRight, ArrowLeft, CheckCircle, Shield, Clock, DollarSign, User, Heart, Calendar } from 'lucide-react';
+import { trackQuote } from '../utils/track';
 
 const TYPES = [
   { id: 'term', label: 'Term Life', desc: 'Affordable coverage for a set period', icon: Clock, popular: true },
@@ -47,6 +48,7 @@ export default function QuoteCalculator() {
         body: JSON.stringify({ ...d, _subject: `Quote Lead: ${d.name} — ${d.type} $${d.amount.toLocaleString()}`, source: 'Quote Calculator' }),
       });
     } catch {}
+    trackQuote('Quote Calculator', { type: d.type, amount: d.amount });
     setResults(true);
   };
 

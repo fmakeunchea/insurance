@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Phone, Mail, MapPin, Send, Clock, Calendar, Shield } from 'lucide-react';
+import { trackLead } from '../utils/track';
 
 export default function Contact() {
   const [data, setData] = useState({ name: '', email: '', phone: '', service: '', message: '' });
@@ -14,6 +15,7 @@ export default function Contact() {
         body: JSON.stringify({ ...data, _subject: `Contact: ${data.name} — ${data.service || 'General'}` }),
       });
     } catch {}
+    trackLead('Contact Form', { service: data.service });
     setDone(true);
   };
 

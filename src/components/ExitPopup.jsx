@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { X, Shield, ArrowRight, CheckCircle, Clock } from 'lucide-react';
+import { trackLead } from '../utils/track';
 
 export default function ExitPopup() {
   const [show, setShow] = useState(false);
@@ -38,6 +39,7 @@ export default function ExitPopup() {
         body: JSON.stringify({ email, _subject: `Exit Popup Lead: ${email}`, source: 'Exit Intent Popup' }),
       });
     } catch {}
+    trackLead('Exit Popup');
     setDone(true);
   };
 

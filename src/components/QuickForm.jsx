@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Send, Shield, CheckCircle, ArrowRight } from 'lucide-react';
+import { trackLead } from '../utils/track';
 
 export default function QuickForm() {
   const [data, setData] = useState({ name: '', phone: '', email: '', coverage: '', time: '' });
@@ -15,6 +16,7 @@ export default function QuickForm() {
         body: JSON.stringify({ ...data, _subject: `Lead: ${data.name} — ${data.coverage}` }),
       });
     } catch {}
+    trackLead('Quick Form', { coverage: data.coverage });
     setDone(true);
   };
 
