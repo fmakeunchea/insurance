@@ -3,7 +3,8 @@ import { Calculator, ArrowRight, ArrowLeft, CheckCircle, Shield, Clock, DollarSi
 import { trackQuote } from '../utils/track';
 
 const TYPES = [
-  { id: 'term', label: 'Term Life', desc: 'Affordable coverage for a set period', icon: Clock, popular: true },
+  { id: 'iul', label: 'IUL (Index Universal Life)', desc: 'Cash value + living benefits + tax-free growth', icon: Shield, popular: true },
+  { id: 'term', label: 'Term Life', desc: 'Affordable coverage for a set period', icon: Clock },
   { id: 'whole', label: 'Whole Life', desc: 'Lifetime coverage with cash value', icon: Shield },
   { id: 'final', label: 'Final Expense', desc: 'Covers end-of-life costs', icon: Heart },
 ];
@@ -20,7 +21,7 @@ const AMOUNTS = [
 ];
 
 function estimate(type, age, health, amount) {
-  const rates = { term: 0.0006, whole: 0.0015, final: 0.002 };
+  const rates = { iul: 0.0018, term: 0.0006, whole: 0.0015, final: 0.002 };
   const ageMul = { '18-25': 0.7, '26-35': 0.85, '36-45': 1, '46-55': 1.4, '56-65': 2, '65+': 3.2 };
   const healthMul = { excellent: 0.8, good: 1, average: 1.3, below: 1.7 };
   return Math.round(amount * (rates[type] || 0.001) * (ageMul[age] || 1) * (healthMul[health] || 1) * 100) / 100;

@@ -68,9 +68,11 @@ export default function QuickForm() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <select name="coverage" value={data.coverage} onChange={set} className={input}>
                   <option value="">Coverage type...</option>
+                  <option>IUL (Index Universal Life)</option>
                   <option>Term Life</option>
                   <option>Whole Life</option>
                   <option>Final Expense</option>
+                  <option>Living Benefits</option>
                   <option>Family Protection</option>
                   <option>Retirement</option>
                   <option>Not Sure — Help Me Choose</option>

@@ -74,9 +74,11 @@ export default function Contact() {
                   <input type="tel" name="phone" value={data.phone} onChange={set} placeholder="Phone (optional)" className={input} />
                   <select name="service" value={data.service} onChange={set} className={input}>
                     <option value="">Service interested in...</option>
+                    <option>IUL (Index Universal Life)</option>
                     <option>Term Life</option>
                     <option>Whole Life</option>
                     <option>Final Expense</option>
+                    <option>Living Benefits</option>
                     <option>Family Protection</option>
                     <option>Retirement</option>
                     <option>Not Sure</option>
