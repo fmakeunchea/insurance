@@ -40,6 +40,83 @@
       fbq('init', '000000000000000');
       fbq('track', 'PageView');
     </script>
+    <!-- Schema: InsuranceAgency + LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["InsuranceAgency", "LocalBusiness"],
+      "name": "Cornerstone Life Advisors",
+      "description": "Licensed insurance agent helping Virginia families with IUL, term life, whole life, and final expense insurance. Serving Fredericksburg, Stafford, and Spotsylvania.",
+      "url": "https://cornerstonelifeinsure.com",
+      "telephone": "+15404241852",
+      "email": "hanordinc@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Spotsylvania",
+        "addressRegion": "VA",
+        "postalCode": "22553",
+        "addressCountry": "US"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 38.2048, "longitude": -77.5858 },
+      "areaServed": [
+        { "@type": "City", "name": "Fredericksburg", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+        { "@type": "City", "name": "Stafford", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+        { "@type": "City", "name": "Spotsylvania", "containedInPlace": { "@type": "State", "name": "Virginia" } }
+      ],
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "128", "bestRating": "5" },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00" }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61572156419175",
+        "https://www.instagram.com/fmakeunch/",
+        "https://www.linkedin.com/company/cornerstone-life-advisors/"
+      ]
+    }
+    </script>
+
+    <!-- Schema: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much life insurance do I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most financial experts recommend 10-12 times your annual income. A family earning $60,000/year should have $600,000-$720,000 in coverage. During a free consultation, we'll calculate your exact number based on debts, income, mortgage, and education goals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between term life and whole life insurance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Term life covers you for a set period (10-30 years) at the lowest cost. Whole life covers you for your entire life and builds cash value. IUL (Index Universal Life) offers permanent coverage with market-linked cash value growth and living benefits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is IUL (Index Universal Life) insurance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IUL is permanent life insurance where your cash value grows tied to market indexes like the S&P 500, with a 0% floor so you never lose money. You can access cash through tax-free loans and withdrawals, plus get living benefits for critical, chronic, and terminal illness."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does life insurance cost in Virginia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A healthy 30-year-old can get $500K in term life coverage for about $21/month. Whole life starts around $85/month. IUL plans are customized based on your goals. As an independent agent, we compare 15+ carriers to find the lowest rate."
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -52,9 +52,30 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      {/* Hyper-Local Service Areas */}
+      <div className="border-t border-navy-800">
+        <div className="max-w-7xl mx-auto px-4 py-8">
+          <h4 className="font-semibold text-white text-sm mb-4 text-center">Areas We Serve in Virginia</h4>
+          <div className="flex flex-wrap justify-center gap-2">
+            {['Fredericksburg', 'Stafford', 'Spotsylvania', 'King George', 'Caroline County', 'Woodbridge', 'Manassas', 'Lake Ridge', 'Culpeper', 'Northern Virginia'].map(city => (
+              <span key={city} className="bg-navy-800 text-navy-300 text-xs px-3 py-1.5 rounded-full hover:bg-navy-700 hover:text-gold-400 transition-colors cursor-default">
+                {city}
+              </span>
+            ))}
+          </div>
+          <div className="flex flex-wrap justify-center gap-3 mt-4">
+            <Link to="/services/term-life" className="text-navy-400 hover:text-gold-400 text-xs transition-colors">Term Life Insurance</Link>
+            <span className="text-navy-600">·</span>
+            <Link to="/services/whole-life" className="text-navy-400 hover:text-gold-400 text-xs transition-colors">Whole Life Insurance</Link>
+            <span className="text-navy-600">·</span>
+            <Link to="/services/iul" className="text-navy-400 hover:text-gold-400 text-xs transition-colors">IUL / Wealth Building</Link>
+          </div>
+        </div>
+      </div>
+
       <div className="border-t border-navy-800">
         <div className="max-w-7xl mx-auto px-4 py-6 text-center sm:text-left">
-          <p className="text-navy-400 text-xs">&copy; {year} Cornerstone Life Advisors. All rights reserved. Fifi Makeunchea, Licensed Insurance Agent.</p>
+          <p className="text-navy-400 text-xs">&copy; {year} Cornerstone Life Advisors. All rights reserved. Fifi Makeunchea, Licensed Insurance Agent. Serving Fredericksburg, Stafford, Spotsylvania &amp; all of Virginia.</p>
         </div>
       </div>
     </footer>
