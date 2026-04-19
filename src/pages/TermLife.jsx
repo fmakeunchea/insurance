@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Shield, CheckCircle, ArrowRight, Calendar, Clock, DollarSign, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const RATES = [
   { age: '25', m250: '$13', m500: '$19', m1m: '$30' },
@@ -15,6 +16,11 @@ export default function TermLife() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Term Life Insurance in Virginia — Rates from $13/month"
+        description="Affordable term life insurance in Virginia. $500K coverage from $21/month for healthy 30-year-olds. Compare rates from 15+ A-rated carriers with Fifi Makeunchea."
+        path="/services/term-life"
+      />
       <section className="bg-navy-950 pt-32 pb-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-1.5 mb-6">

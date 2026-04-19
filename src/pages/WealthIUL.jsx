@@ -1,10 +1,16 @@
 import { useEffect } from 'react';
 import { Sparkles, CheckCircle, ArrowRight, Calendar, TrendingUp, Shield, HeartPulse, DollarSign } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function WealthIUL() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="IUL Insurance Virginia — Tax-Free Wealth Building with Index Universal Life"
+        description="Index Universal Life (IUL) insurance in Virginia. Tax-free cash value, policy loans, and living benefits. Interest in IUL has grown 1,178%. Free consultation with Fifi Makeunchea."
+        path="/services/iul"
+      />
       <section className="bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800 pt-32 pb-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(180,153,102,0.15),transparent_50%)]" />
         <div className="relative max-w-4xl mx-auto px-4 text-center">

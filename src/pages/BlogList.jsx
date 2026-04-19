@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { Clock, ArrowRight, BookOpen, Calendar } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import { useEffect } from 'react';
+import SEO from '../components/SEO';
 
 export default function BlogList() {
   const navigate = useNavigate();
@@ -10,6 +11,11 @@ export default function BlogList() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Life Insurance Blog — Expert Guides for Virginia Families"
+        description="Free guides and insights on life insurance, IUL, term life, whole life, and wealth planning. Written by licensed agent Fifi Makeunchea in Fredericksburg, VA."
+        path="/blog"
+      />
       <section className="bg-navy-950 pt-32 pb-16">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <BookOpen className="w-8 h-8 text-gold-400 mx-auto mb-4" />

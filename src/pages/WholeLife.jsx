@@ -1,10 +1,16 @@
 import { useEffect } from 'react';
 import { Shield, CheckCircle, ArrowRight, Calendar, Lock, TrendingUp, Heart } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function WholeLife() {
   useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Whole Life Insurance in Virginia — Lifetime Coverage + Cash Value"
+        description="Whole life insurance for Virginia families. Guaranteed lifetime coverage with cash value growth. From $85/month. Compare 15+ A-rated carriers with Fifi Makeunchea."
+        path="/services/whole-life"
+      />
       <section className="bg-navy-950 pt-32 pb-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-1.5 mb-6">

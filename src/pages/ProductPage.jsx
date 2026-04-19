@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { ShoppingBag, CheckCircle, Shield, Download, ArrowLeft, ArrowRight, Star, Users } from 'lucide-react';
 import { products } from '../data/products';
 import { trackQuote } from '../utils/track';
+import SEO from '../components/SEO';
 
 export default function ProductPage() {
   const { slug } = useParams();
@@ -25,6 +26,11 @@ export default function ProductPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title={product.title}
+        description={product.subtitle + ' — ' + product.description.slice(0, 140)}
+        path={`/shop/${product.slug}`}
+      />
       <section className="bg-navy-950 pt-32 pb-16">
         <div className="max-w-4xl mx-auto px-4">
           <button onClick={() => navigate('/shop')} className="inline-flex items-center gap-2 text-navy-400 hover:text-gold-400 text-sm mb-6">

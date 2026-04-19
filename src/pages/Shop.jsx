@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ShoppingBag, Star, ArrowRight, Shield, Download, CheckCircle, Sparkles } from 'lucide-react';
 import { products } from '../data/products';
+import SEO from '../components/SEO';
 
 export default function Shop() {
   const navigate = useNavigate();
@@ -9,6 +10,11 @@ export default function Shop() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Insurance Guides & Digital Products"
+        description="Expert insurance guides from licensed agent Fifi Makeunchea. The Wealth Architecture, IUL Blueprint, Family Protection Checklist, and more. Instant PDF downloads."
+        path="/shop"
+      />
       {/* Header */}
       <section className="bg-navy-950 pt-32 pb-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(180,153,102,0.12),transparent_50%)]" />

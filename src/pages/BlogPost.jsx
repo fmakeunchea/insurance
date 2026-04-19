@@ -2,6 +2,7 @@ import { useParams, Link, Navigate, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { ArrowLeft, Clock, Calendar, ArrowRight } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
+import SEO from '../components/SEO';
 
 function renderContent(content) {
   const lines = content.split('\n');
@@ -101,6 +102,11 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title={post.title}
+        description={post.excerpt}
+        path={`/blog/${post.slug}`}
+      />
       <section className="bg-navy-950 pt-32 pb-14">
         <div className="max-w-3xl mx-auto px-4">
           <button onClick={() => navigate('/blog')} className="inline-flex items-center gap-2 text-navy-400 hover:text-gold-400 text-sm mb-6">
