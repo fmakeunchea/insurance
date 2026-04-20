@@ -30,6 +30,7 @@ export default function Footer() {
               {[['Services','/#services'],['About','/#about'],['Testimonials','/#testimonials'],['FAQ','/#faq'],['Contact','/#contact']].map(([l,h]) => (
                 <li key={l}><a href={h} className="text-navy-300 hover:text-gold-400 transition-colors">{l}</a></li>
               ))}
+              <li><Link to="/free-guides" className="text-navy-300 hover:text-gold-400 transition-colors">Free Guides</Link></li>
               <li><Link to="/blog" className="text-navy-300 hover:text-gold-400 transition-colors">Blog</Link></li>
               <li><Link to="/shop" className="text-navy-300 hover:text-gold-400 transition-colors">Shop Guides</Link></li>
             </ul>

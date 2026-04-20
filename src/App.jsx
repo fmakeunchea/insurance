@@ -25,6 +25,7 @@ import WholeLife from './pages/WholeLife';
 import WealthIUL from './pages/WealthIUL';
 import Shop from './pages/Shop';
 import ProductPage from './pages/ProductPage';
+import Resources from './pages/Resources';
 
 function Home() {
   return (
@@ -67,6 +68,7 @@ export default function App() {
           <Route path="/services/iul" element={<WealthIUL />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/shop/:slug" element={<ProductPage />} />
+          <Route path="/free-guides" element={<Resources />} />
         </Routes>
         <Footer />
         <ExitPopup />
