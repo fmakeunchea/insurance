@@ -29,7 +29,7 @@ export default function ForEngineers() {
     <div className="min-h-screen bg-white">
       <SEO
         title="Life Insurance for Engineers — IUL for Tech Workers"
-        description="Former AWS DevOps engineer turned licensed insurance agent. IUL, term life, and disability insurance for software engineers, devs, and tech professionals. Licensed in all 50 states."
+        description="AWS DevOps engineer & licensed insurance agent in all 50 states. IUL, term life, and disability insurance for software engineers, devs, and tech professionals."
         path="/for-engineers"
       />
 
@@ -48,7 +48,7 @@ export default function ForEngineers() {
                 Here's the <span className="text-gold-400">Engineer's Hedge</span>.
               </h1>
               <p className="text-lg text-navy-200 mb-8 max-w-xl">
-                I'm a former AWS DevOps engineer turned licensed insurance agent in all 50 states.
+                I'm an AWS DevOps engineer and licensed insurance agent in all 50 states.
                 I help software engineers, devs, and tech professionals build tax-free wealth using
                 Index Universal Life — the strategy your CFO uses but Reddit never told you about.
               </p>
