@@ -9,8 +9,8 @@ const LINKS = [
   { label: 'FAQ', href: '/#faq' },
   { label: 'Free Guides', href: '/free-guides', route: true },
   { label: 'Blog', href: '/blog', route: true },
-  { label: 'Shop', href: '/shop', route: true },
-  { label: 'Contact', href: '/#contact' },
+  { label: 'For Engineers', href: '/for-engineers', route: true },
+  { label: 'Book a Call', href: '/book', route: true },
 ];
 
 export default function Navbar() {

@@ -26,6 +26,8 @@ import WealthIUL from './pages/WealthIUL';
 import Shop from './pages/Shop';
 import ProductPage from './pages/ProductPage';
 import Resources from './pages/Resources';
+import ForEngineers from './pages/ForEngineers';
+import Book from './pages/Book';
 
 function Home() {
   return (
@@ -69,6 +71,8 @@ export default function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/shop/:slug" element={<ProductPage />} />
           <Route path="/free-guides" element={<Resources />} />
+          <Route path="/for-engineers" element={<ForEngineers />} />
+          <Route path="/book" element={<Book />} />
         </Routes>
         <Footer />
         <ExitPopup />

@@ -16,6 +16,8 @@ const urls = [
   { loc: '/blog', priority: '0.8', changefreq: 'weekly' },
   { loc: '/shop', priority: '0.8', changefreq: 'weekly' },
   { loc: '/free-guides', priority: '0.9', changefreq: 'monthly' },
+  { loc: '/for-engineers', priority: '0.9', changefreq: 'monthly' },
+  { loc: '/book', priority: '0.9', changefreq: 'monthly' },
   ...blogPosts.map(p => ({ loc: `/blog/${p.slug}`, priority: '0.7', changefreq: 'monthly' })),
   ...products.map(p => ({ loc: `/shop/${p.slug}`, priority: '0.8', changefreq: 'monthly' })),
 ];
