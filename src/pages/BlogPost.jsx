@@ -1,8 +1,28 @@
 import { useParams, Link, Navigate, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import { ArrowLeft, Clock, Calendar, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Clock, Calendar, ArrowRight, Download, CheckCircle } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
+import { freeGuides } from '../data/freeGuides';
+import LeadMagnetForm from '../components/LeadMagnetForm';
 import SEO from '../components/SEO';
+
+// Match each blog post to its best-fit lead magnet
+const GUIDE_FOR_POST = {
+  'what-is-iul-insurance-virginia-guide': 'iul-wealth-blueprint-sample',
+  'life-insurance-for-new-parents-virginia': 'family-protection-checklist',
+  'final-expense-insurance-virginia-guide': 'life-insurance-buying-guide',
+  'life-insurance-after-50-virginia': 'life-insurance-buying-guide',
+  'how-much-life-insurance-do-i-need': 'family-protection-checklist',
+  'term-vs-whole-life-insurance': 'life-insurance-buying-guide',
+  'life-insurance-mistakes-fredericksburg-families': 'life-insurance-buying-guide',
+  'life-insurance-cost-virginia-2026': 'life-insurance-buying-guide',
+  'what-happens-without-life-insurance': 'family-protection-checklist',
+};
+
+function getGuideForPost(slug) {
+  const guideSlug = GUIDE_FOR_POST[slug] || 'life-insurance-buying-guide';
+  return freeGuides.find((g) => g.slug === guideSlug);
+}
 
 function renderContent(content) {
   const lines = content.split('\n');
@@ -132,6 +152,43 @@ export default function BlogPost() {
       <article className="max-w-3xl mx-auto px-4 py-12 text-navy-700">
         {renderContent(post.content)}
       </article>
+
+      {/* Inline Lead Magnet — contextual, matches post topic */}
+      {(() => {
+        const guide = getGuideForPost(post.slug);
+        if (!guide) return null;
+        return (
+          <div className="max-w-3xl mx-auto px-4 mb-12">
+            <div className="bg-gradient-to-br from-gold-50 via-white to-gold-50 border-2 border-gold-300 rounded-2xl p-6 sm:p-8 shadow-lg">
+              <div className="grid md:grid-cols-5 gap-6 items-center">
+                <div className="md:col-span-3">
+                  <div className="inline-flex items-center gap-2 bg-gold-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">
+                    <Download className="w-3 h-3" /> Free Download
+                  </div>
+                  <h3 className="font-display text-2xl sm:text-3xl font-bold text-navy-900 mb-2">
+                    Get: {guide.title}
+                  </h3>
+                  <p className="text-navy-600 text-sm mb-4">{guide.subtitle}</p>
+                  <ul className="space-y-1.5">
+                    {guide.bullets.slice(0, 3).map((b) => (
+                      <li key={b} className="flex items-start gap-2 text-sm text-navy-700">
+                        <CheckCircle className="w-4 h-4 text-gold-600 shrink-0 mt-0.5" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-navy-400 text-xs mt-3">
+                    {guide.pages} · Instant download · 100% free
+                  </p>
+                </div>
+                <div className="md:col-span-2">
+                  <LeadMagnetForm guide={guide} compact />
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
 
       <div className="max-w-3xl mx-auto px-4 pb-12">
         <div className="bg-gradient-to-r from-navy-900 to-navy-800 rounded-2xl p-8 text-center">

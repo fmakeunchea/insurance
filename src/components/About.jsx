@@ -15,11 +15,11 @@ export default function About() {
         <div className="order-1 lg:order-2">
           <span className="text-gold-600 font-semibold text-sm tracking-wider uppercase mb-4 block">About Me</span>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-navy-900 mb-6">
-            Your Neighbor, Your Advisor, Your <span className="text-gold-600">Advocate</span>
+            Your Advisor, Your <span className="text-gold-600">Advocate</span>, Wherever You Are
           </h2>
           <div className="space-y-4 text-navy-600 leading-relaxed mb-8">
-            <p>I'm Fifi Makeunchea, a licensed insurance agent based in Fredericksburg, Virginia. I chose this career because every family deserves clear, honest guidance when it comes to protecting the people they love.</p>
-            <p>Over 12 years, I've helped 1,200+ families find the right coverage. I work with 15+ A-rated carriers, which means I shop the market for you — something a captive agent can't do.</p>
+            <p>I'm Fifi Makeunchea, a licensed insurance agent serving clients in all 50 states. I chose this career because every family deserves clear, honest guidance when it comes to protecting the people they love.</p>
+            <p>Over 12 years, I've helped 1,200+ families find the right coverage. I work with 15+ A-rated carriers — which means I shop the market for you, something a captive agent can't do. With 100% remote consultations by phone or video, geography is no longer a barrier to great coverage.</p>
           </div>
           <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl transition-all mb-8">
             <Calendar className="w-4 h-4" /> Book a Free Consultation

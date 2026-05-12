@@ -57,11 +57,17 @@ export default function Footer() {
       {/* Hyper-Local Service Areas */}
       <div className="border-t border-navy-800">
         <div className="max-w-7xl mx-auto px-4 py-8">
-          <h4 className="font-semibold text-white text-sm mb-4 text-center">Areas We Serve in Virginia</h4>
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-1.5">
+              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+              <span className="text-gold-300 text-sm font-semibold">Licensed in All 50 States</span>
+            </div>
+          </div>
+          <h4 className="font-semibold text-white text-sm mb-3 text-center">Service Areas Include</h4>
           <div className="flex flex-wrap justify-center gap-2">
-            {['Fredericksburg', 'Stafford', 'Spotsylvania', 'King George', 'Caroline County', 'Woodbridge', 'Manassas', 'Lake Ridge', 'Culpeper', 'Northern Virginia'].map(city => (
-              <span key={city} className="bg-navy-800 text-navy-300 text-xs px-3 py-1.5 rounded-full hover:bg-navy-700 hover:text-gold-400 transition-colors cursor-default">
-                {city}
+            {['Virginia', 'California', 'Texas', 'Florida', 'New York', 'Illinois', 'Pennsylvania', 'Ohio', 'Georgia', 'North Carolina', '+ 40 more states'].map(loc => (
+              <span key={loc} className="bg-navy-800 text-navy-300 text-xs px-3 py-1.5 rounded-full hover:bg-navy-700 hover:text-gold-400 transition-colors cursor-default">
+                {loc}
               </span>
             ))}
           </div>
@@ -77,7 +83,7 @@ export default function Footer() {
 
       <div className="border-t border-navy-800">
         <div className="max-w-7xl mx-auto px-4 py-6 text-center sm:text-left">
-          <p className="text-navy-400 text-xs">&copy; {year} Cornerstone Life Advisors. All rights reserved. Fifi Makeunchea, Licensed Insurance Agent. Serving Fredericksburg, Stafford, Spotsylvania &amp; all of Virginia.</p>
+          <p className="text-navy-400 text-xs">&copy; {year} Cornerstone Life Advisors. All rights reserved. Fifi Makeunchea, Licensed Insurance Agent in all 50 United States.</p>
         </div>
       </div>
     </footer>

@@ -30,17 +30,17 @@ export default function Hero() {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-4 py-2 mb-8">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              <span className="text-white/80 text-sm">Licensed in Virginia — Accepting New Clients</span>
+              <span className="text-white/80 text-sm">Licensed in All 50 States — Accepting New Clients</span>
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.4rem] xl:text-6xl font-bold text-white leading-[1.08] mb-6">
-              Protecting Virginia Families with Life Insurance That{' '}
+              Protecting Families Nationwide with Life Insurance That{' '}
               <span className="text-gold-400">Builds Wealth</span>
             </h1>
 
             <p className="text-lg text-navy-200 leading-relaxed mb-6 max-w-xl mx-auto lg:mx-0">
               From affordable term life to IUL cash-value strategies — I compare 15+ A-rated carriers
-              to find you the best coverage at the lowest rate. Serving Fredericksburg, Stafford &amp; Spotsylvania.
+              to find you the best coverage at the lowest rate. 100% remote — serving clients in all 50 states.
             </p>
 
             {/* Mobile headshot */}

@@ -6,7 +6,7 @@ const DEFAULT_IMAGE = `${SITE}/banner.png`;
 export default function SEO({ title, description, path = '', image = DEFAULT_IMAGE }) {
   const fullTitle = title
     ? `${title} | Cornerstone Life Advisors`
-    : 'Cornerstone Life Advisors — Life Insurance in Fredericksburg, VA';
+    : 'Cornerstone Life Advisors — Nationwide Life Insurance | Licensed in 50 States';
   const url = `${SITE}${path}`;
 
   return (

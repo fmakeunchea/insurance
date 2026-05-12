@@ -15,11 +15,11 @@ export default function CarrierTrustBar() {
   return (
     <section className="bg-white py-8 border-b border-navy-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Virginia badge */}
-        <div className="flex items-center justify-center gap-3 mb-6">
+        {/* Nationwide license badge */}
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
           <div className="flex items-center gap-2 bg-navy-900 text-white rounded-full px-5 py-2">
             <Award className="w-5 h-5 text-gold-400" />
-            <span className="text-sm font-semibold">Licensed in Virginia</span>
+            <span className="text-sm font-semibold">Licensed in All 50 States</span>
           </div>
           <div className="flex items-center gap-2 bg-gold-50 border border-gold-200 text-gold-700 rounded-full px-5 py-2">
             <Shield className="w-4 h-4" />
