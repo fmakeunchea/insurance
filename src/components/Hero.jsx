@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, CheckCircle, Star, ArrowRight, Shield } from 'lucide-react';
 import { trackLead } from '../utils/track';
 
@@ -68,7 +69,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               {['Licensed & Certified', 'IUL & Cash Value Specialist', 'Free Consultations'].map(t => (
                 <div key={t} className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-gold-400" />
@@ -76,6 +77,10 @@ export default function Hero() {
                 </div>
               ))}
             </div>
+
+            <Link to="/quiz" className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 border border-gold-400/40 text-white font-semibold rounded-xl transition-all">
+              <Shield className="w-4 h-4 text-gold-400" /> Not sure where you stand? Take the Free Quiz <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
 
           {/* Right — Quick Quote Form */}

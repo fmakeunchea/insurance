@@ -124,7 +124,7 @@ export default function Book() {
               <span className="text-gold-600 font-bold">Send a message →</span>
             </a>
             <a
-              href="mailto:hanordinc@gmail.com"
+              href="mailto:fifi@cornerstonelifeinsure.com"
               className="bg-white border border-navy-100 hover:border-gold-300 rounded-2xl p-6 text-center transition-all hover:shadow-lg"
             >
               <div className="w-12 h-12 bg-navy-900 rounded-xl flex items-center justify-center mx-auto mb-4">
@@ -132,7 +132,7 @@ export default function Book() {
               </div>
               <h3 className="font-display text-lg font-semibold text-navy-900 mb-1">Email</h3>
               <p className="text-navy-500 text-sm mb-2">For longer questions</p>
-              <span className="text-gold-600 font-bold">hanordinc@gmail.com</span>
+              <span className="text-gold-600 font-bold">fifi@cornerstonelifeinsure.com</span>
             </a>
           </div>
         </div>

@@ -34,7 +34,7 @@ export default function Contact() {
               <h3 className="font-display text-lg font-semibold text-navy-900 mb-5">Contact Info</h3>
               {[
                 { icon: Phone, label: 'Phone', value: '(540) 424-1852', href: 'tel:+15404241852' },
-                { icon: Mail, label: 'Email', value: 'hanordinc@gmail.com', href: 'mailto:hanordinc@gmail.com' },
+                { icon: Mail, label: 'Email', value: 'fifi@cornerstonelifeinsure.com', href: 'mailto:fifi@cornerstonelifeinsure.com' },
                 { icon: MapPin, label: 'Location', value: 'Fredericksburg, Virginia' },
                 { icon: Clock, label: 'Hours', value: 'Mon–Fri 9am–6pm' },
               ].map(({ icon: Icon, label, value, href }) => (

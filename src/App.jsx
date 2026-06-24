@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import AnnouncementBar from './components/AnnouncementBar';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -29,6 +29,10 @@ import Resources from './pages/Resources';
 import ForEngineers from './pages/ForEngineers';
 import Book from './pages/Book';
 import FamilyProtectionQuiz from './pages/FamilyProtectionQuiz';
+import StartLanding from './pages/StartLanding';
+
+// Distraction-free landing routes: no nav, footer, popups, or floating widgets.
+const BARE_ROUTES = ['/start', '/protect-my-family', '/family-score'];
 
 function Home() {
   return (
@@ -56,33 +60,45 @@ function Home() {
   );
 }
 
+function Layout() {
+  const { pathname } = useLocation();
+  const bare = BARE_ROUTES.includes(pathname);
+
+  return (
+    <div className="min-h-screen bg-white font-sans text-navy-900">
+      {!bare && <AnnouncementBar />}
+      {!bare && <Navbar />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<BlogList />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/services/term-life" element={<TermLife />} />
+        <Route path="/services/whole-life" element={<WholeLife />} />
+        <Route path="/services/iul" element={<WealthIUL />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/shop/:slug" element={<ProductPage />} />
+        <Route path="/free-guides" element={<Resources />} />
+        <Route path="/for-engineers" element={<ForEngineers />} />
+        <Route path="/book" element={<Book />} />
+        <Route path="/quiz" element={<FamilyProtectionQuiz />} />
+        <Route path="/family-protection-score" element={<FamilyProtectionQuiz />} />
+        <Route path="/start" element={<StartLanding />} />
+        <Route path="/protect-my-family" element={<StartLanding />} />
+        <Route path="/family-score" element={<StartLanding />} />
+      </Routes>
+      {!bare && <Footer />}
+      {!bare && <ExitPopup />}
+      {!bare && <FloatingCTA />}
+      {!bare && <ChatWidget />}
+      {!bare && <ClickToCall />}
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-white font-sans text-navy-900">
-        <AnnouncementBar />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<BlogList />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/services/term-life" element={<TermLife />} />
-          <Route path="/services/whole-life" element={<WholeLife />} />
-          <Route path="/services/iul" element={<WealthIUL />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/shop/:slug" element={<ProductPage />} />
-          <Route path="/free-guides" element={<Resources />} />
-          <Route path="/for-engineers" element={<ForEngineers />} />
-          <Route path="/book" element={<Book />} />
-          <Route path="/quiz" element={<FamilyProtectionQuiz />} />
-          <Route path="/family-protection-score" element={<FamilyProtectionQuiz />} />
-        </Routes>
-        <Footer />
-        <ExitPopup />
-        <FloatingCTA />
-        <ChatWidget />
-        <ClickToCall />
-      </div>
+      <Layout />
     </BrowserRouter>
   );
 }

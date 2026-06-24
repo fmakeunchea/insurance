@@ -47,7 +47,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-sm">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li><a href="tel:+15404241852" className="flex items-center gap-2 text-navy-300 hover:text-gold-400"><Phone className="w-4 h-4" />(540) 424-1852</a></li>
-              <li><a href="mailto:hanordinc@gmail.com" className="flex items-center gap-2 text-navy-300 hover:text-gold-400"><Mail className="w-4 h-4" />hanordinc@gmail.com</a></li>
+              <li><a href="mailto:fifi@cornerstonelifeinsure.com" className="flex items-center gap-2 text-navy-300 hover:text-gold-400"><Mail className="w-4 h-4" />fifi@cornerstonelifeinsure.com</a></li>
               <li><span className="flex items-center gap-2 text-navy-300"><MapPin className="w-4 h-4" />Fredericksburg, VA</span></li>
             </ul>
             <a href="/#quick-form" className="inline-flex items-center mt-5 px-5 py-2.5 bg-gold-500 hover:bg-gold-600 text-white text-sm font-semibold rounded-lg transition-colors">Get a Free Quote</a>
