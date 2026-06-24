@@ -7,6 +7,7 @@ const LINKS = [
   { label: 'About', href: '/#about' },
   { label: 'Testimonials', href: '/#testimonials' },
   { label: 'FAQ', href: '/#faq' },
+  { label: 'Free Quiz', href: '/quiz', route: true },
   { label: 'Free Guides', href: '/free-guides', route: true },
   { label: 'Blog', href: '/blog', route: true },
   { label: 'For Engineers', href: '/for-engineers', route: true },

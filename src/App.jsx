@@ -28,6 +28,7 @@ import ProductPage from './pages/ProductPage';
 import Resources from './pages/Resources';
 import ForEngineers from './pages/ForEngineers';
 import Book from './pages/Book';
+import FamilyProtectionQuiz from './pages/FamilyProtectionQuiz';
 
 function Home() {
   return (
@@ -73,6 +74,8 @@ export default function App() {
           <Route path="/free-guides" element={<Resources />} />
           <Route path="/for-engineers" element={<ForEngineers />} />
           <Route path="/book" element={<Book />} />
+          <Route path="/quiz" element={<FamilyProtectionQuiz />} />
+          <Route path="/family-protection-score" element={<FamilyProtectionQuiz />} />
         </Routes>
         <Footer />
         <ExitPopup />
