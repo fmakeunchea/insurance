@@ -5,6 +5,7 @@ import {
   ShieldCheck, BookOpen, Lock, CheckCircle, Clock,
 } from 'lucide-react';
 import SEO from '../components/SEO';
+import { trackLandingView } from '../utils/track';
 
 const TRUST = [
   { icon: ShieldCheck, label: 'Licensed Insurance Professional' },
@@ -35,7 +36,7 @@ function QuizCTA({ children, className = '' }) {
 }
 
 export default function StartLanding() {
-  useEffect(() => { window.scrollTo(0, 0); }, []);
+  useEffect(() => { window.scrollTo(0, 0); trackLandingView('Start Landing'); }, []);
 
   return (
     <div className="min-h-screen bg-white pb-24 lg:pb-0">
@@ -85,35 +86,16 @@ export default function StartLanding() {
         </div>
       </section>
 
-      {/* ── PROBLEM ── */}
+      {/* ── QUIZ PREVIEW (directly below hero — communicates value immediately) ── */}
       <section className="py-16 sm:py-20">
-        <div className="max-w-2xl mx-auto px-4 text-center">
-          <h2 className="font-display text-2xl sm:text-3xl font-bold text-navy-900 mb-5">
-            Most families are counting on a plan they've never actually checked.
-          </h2>
-          <p className="text-navy-600 text-lg leading-relaxed mb-4">
-            You cover the mortgage. You bring home the income. Maybe you have a policy through work.
-            But here's the question almost no one stops to ask:
-          </p>
-          <p className="font-display text-xl sm:text-2xl font-bold text-navy-900 mb-4">
-            If your paycheck disappeared tomorrow, would your family really be okay?
-          </p>
-          <p className="text-navy-600 text-lg leading-relaxed">
-            Employer coverage is often only 1–2× your salary — and it disappears the day you leave the job.
-            Most families have a protection gap they don't even know about. The good news? It takes
-            60 seconds to find out where you stand.
-          </p>
-        </div>
-      </section>
-
-      {/* ── QUIZ PREVIEW ── */}
-      <section className="bg-navy-50/60 py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-navy-900 mb-3">
               What the quiz checks
             </h2>
-            <p className="text-navy-500 text-lg">Six quick questions across the things that matter most.</p>
+            <p className="text-navy-500 text-lg flex items-center justify-center gap-1.5">
+              <Clock className="w-4 h-4" /> Takes less than 60 seconds
+            </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {CHECKS.map(({ icon: Icon, label, desc }) => (
@@ -134,6 +116,27 @@ export default function StartLanding() {
               <Clock className="w-4 h-4" /> Takes about 60 seconds
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* ── PROBLEM ── */}
+      <section className="bg-navy-50/60 py-16 sm:py-20">
+        <div className="max-w-2xl mx-auto px-4 text-center">
+          <h2 className="font-display text-2xl sm:text-3xl font-bold text-navy-900 mb-5">
+            Most families are counting on a plan they've never actually checked.
+          </h2>
+          <p className="text-navy-600 text-lg leading-relaxed mb-4">
+            You cover the mortgage. You bring home the income. Maybe you have a policy through work.
+            But here's the question almost no one stops to ask:
+          </p>
+          <p className="font-display text-xl sm:text-2xl font-bold text-navy-900 mb-4">
+            If your paycheck disappeared tomorrow, would your family really be okay?
+          </p>
+          <p className="text-navy-600 text-lg leading-relaxed">
+            Employer coverage is often only 1–2× your salary — and it disappears the day you leave the job.
+            Most families have a protection gap they don't even know about. The good news? It takes
+            60 seconds to find out where you stand.
+          </p>
         </div>
       </section>
 

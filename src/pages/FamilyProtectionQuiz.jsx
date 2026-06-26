@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import {
   Shield, ArrowRight, ArrowLeft, CheckCircle, Clock, Lock,
-  Home, Heart, Users, DollarSign, Calendar, Phone, ShieldCheck, Award,
+  Home, Heart, Users, DollarSign, Calendar, Phone, ShieldCheck, Award, BookOpen,
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import { trackQuote, trackLead, trackBooking } from '../utils/track';
@@ -272,6 +272,10 @@ export default function FamilyProtectionQuiz() {
                 <div className="w-full bg-navy-200 rounded-full h-2">
                   <div className="bg-gradient-to-r from-gold-500 to-gold-400 h-2 rounded-full transition-all duration-500" style={{ width: `${progress}%` }} />
                 </div>
+                <p className="text-navy-400 text-xs mt-2 flex items-center gap-1.5">
+                  <Shield className="w-3.5 h-3.5 text-gold-500" />
+                  {step <= totalQ ? 'Your Family Protection Score is being calculated…' : 'Almost there — your score is ready.'}
+                </p>
               </div>
 
               <div className="p-6 sm:p-10">
@@ -359,6 +363,10 @@ export default function FamilyProtectionQuiz() {
                 </div>
 
                 <div className="p-8 sm:p-10">
+                  <div className="bg-green-50 border border-green-200 rounded-xl p-4 mb-6 flex items-start gap-2.5">
+                    <CheckCircle className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+                    <p className="text-navy-700 text-sm"><strong>Good news, {lead.first} — you've already taken an important step.</strong> Most families never check. Here's what your answers reveal.</p>
+                  </div>
                   <h2 className="font-display text-2xl font-bold text-navy-900 mb-3">{tier.headline}</h2>
                   <p className="text-navy-600 leading-relaxed mb-6">{tier.body}</p>
 
@@ -397,7 +405,25 @@ export default function FamilyProtectionQuiz() {
                         <Phone className="w-5 h-5" /> Call (540) 424-1852
                       </a>
                     </div>
+                    <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 mt-6 pt-5 border-t border-white/10 text-navy-300 text-xs">
+                      <span className="flex items-center gap-1"><CheckCircle className="w-3.5 h-3.5 text-gold-400" />Educational Tool</span>
+                      <span className="flex items-center gap-1"><CheckCircle className="w-3.5 h-3.5 text-gold-400" />No Obligation</span>
+                      <span className="flex items-center gap-1"><CheckCircle className="w-3.5 h-3.5 text-gold-400" />Personalized Review</span>
+                      <span className="flex items-center gap-1"><CheckCircle className="w-3.5 h-3.5 text-gold-400" />Licensed Insurance Professional</span>
+                    </div>
                   </div>
+
+                  {/* Lead magnet — free checklist while they decide */}
+                  <a href="/free-guides" className="mt-6 flex items-center gap-4 bg-gold-50 border border-gold-200 rounded-2xl p-5 hover:border-gold-400 transition-all group">
+                    <div className="w-12 h-12 shrink-0 bg-gold-500 rounded-xl flex items-center justify-center">
+                      <BookOpen className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="font-display font-bold text-navy-900">Free: The Family Protection Checklist</p>
+                      <p className="text-navy-500 text-sm">15 questions every family should ask — yours to download free.</p>
+                    </div>
+                    <ArrowRight className="w-5 h-5 text-gold-500 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </div>
               </div>
               <p className="text-center text-navy-400 text-xs mt-6 max-w-xl mx-auto leading-relaxed">
