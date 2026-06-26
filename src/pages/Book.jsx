@@ -67,7 +67,7 @@ export default function Book() {
           </div>
           <div className="p-2 sm:p-4">
             <iframe
-              src="https://calendly.com/harnordinc?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=b49966"
+              src="https://calendly.com/fifi-cornerstonelifeinsure?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=b49966"
               width="100%"
               height="700"
               frameBorder="0"
@@ -81,7 +81,7 @@ export default function Book() {
         <div className="text-center mt-6">
           <p className="text-navy-500 text-sm mb-3">Calendar not loading?</p>
           <a
-            href="https://calendly.com/harnordinc"
+            href="https://calendly.com/fifi-cornerstonelifeinsure"
             target="_blank"
             rel="noopener noreferrer"
             onClick={trackBooking}
@@ -190,7 +190,7 @@ export default function Book() {
             20 minutes today could give your family a lifetime of security and you a clear path to tax-free wealth.
           </p>
           <a
-            href="https://calendly.com/harnordinc"
+            href="https://calendly.com/fifi-cornerstonelifeinsure"
             target="_blank"
             rel="noopener noreferrer"
             onClick={trackBooking}

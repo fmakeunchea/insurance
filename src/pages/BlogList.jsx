@@ -51,7 +51,7 @@ export default function BlogList() {
             <a href="/" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl">
               <Calendar className="w-5 h-5" />Get Free Quote
             </a>
-            <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white/10 border border-white/20 text-white font-semibold rounded-xl">
+            <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white/10 border border-white/20 text-white font-semibold rounded-xl">
               Book Consultation
             </a>
           </div>

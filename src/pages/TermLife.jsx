@@ -97,7 +97,7 @@ export default function TermLife() {
             <a href="/#quote" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl">
               <Calendar className="w-5 h-5" /> Get My Free Quote
             </a>
-            <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-navy-900 hover:bg-navy-800 text-white font-bold rounded-xl">
+            <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-navy-900 hover:bg-navy-800 text-white font-bold rounded-xl">
               Book Free Consultation
             </a>
           </div>

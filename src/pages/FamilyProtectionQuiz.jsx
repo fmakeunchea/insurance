@@ -390,7 +390,7 @@ export default function FamilyProtectionQuiz() {
                       <span className="flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5 text-gold-400" />Personalized guidance</span>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                      <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" onClick={trackBooking} className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl transition-all hover:shadow-lg">
+                      <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" onClick={trackBooking} className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl transition-all hover:shadow-lg">
                         <Calendar className="w-5 h-5" /> Book My Free Review
                       </a>
                       <a href="tel:+15404241852" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl transition-all border border-white/20">

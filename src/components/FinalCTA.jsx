@@ -16,7 +16,7 @@ export default function FinalCTA() {
           A 20-minute conversation could give your family a lifetime of security.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-          <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl text-lg transition-all hover:shadow-xl active:scale-[0.98]">
+          <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl text-lg transition-all hover:shadow-xl active:scale-[0.98]">
             <Calendar className="w-5 h-5" /> Book Free Consultation
           </a>
           <a href="/#quick-form" className="inline-flex items-center justify-center gap-2 px-10 py-5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-xl text-lg transition-all">

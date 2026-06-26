@@ -61,7 +61,7 @@ export default function ExitPopup() {
               <CheckCircle className="w-14 h-14 text-green-500 mx-auto mb-4" />
               <h3 className="font-display text-2xl font-bold text-navy-900 mb-2">You're All Set!</h3>
               <p className="text-navy-500 text-sm mb-6">Check your inbox — I'll send a personalized quote within 24 hours.</p>
-              <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl">
+              <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl">
                 Book a Call Now <ArrowRight className="w-4 h-4" />
               </a>
             </div>

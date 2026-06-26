@@ -152,7 +152,7 @@ export default function Shop() {
             Every situation is different. Book a free consultation and I'll give you a customized
             recommendation based on your specific needs — no purchase required.
           </p>
-          <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl text-lg">
+          <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl text-lg">
             Book Free Consultation <ArrowRight className="w-5 h-5" />
           </a>
         </div>

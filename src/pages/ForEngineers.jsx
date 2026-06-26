@@ -56,7 +56,7 @@ export default function ForEngineers() {
                 <a href="#audit" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl text-base">
                   Get My Free Tax-Bomb Audit <ArrowRight className="w-5 h-5" />
                 </a>
-                <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-xl text-base">
+                <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-xl text-base">
                   <Calendar className="w-5 h-5" /> Book a 20-Min Call
                 </a>
               </div>
@@ -213,7 +213,7 @@ export default function ForEngineers() {
                   I'll review your details and send your custom IUL projection within 24 hours.
                   Want to skip the wait?
                 </p>
-                <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl">
+                <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl">
                   <Calendar className="w-5 h-5" /> Book a 20-Min Call Now
                 </a>
               </div>

@@ -117,7 +117,7 @@ export default function WealthIUL() {
             I'll walk you through exactly how IUL works for your specific situation — free, no obligation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-5 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl text-lg">
+            <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-8 py-5 bg-gold-500 hover:bg-gold-600 text-white font-bold rounded-xl text-lg">
               <Calendar className="w-5 h-5" /> Book My IUL Consultation
             </a>
             <a href="tel:+15404241852" className="inline-flex items-center justify-center gap-2 px-8 py-5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-xl text-lg">

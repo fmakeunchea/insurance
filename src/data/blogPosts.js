@@ -191,7 +191,7 @@ All three steps can be completed in 30–60 days. The sooner you finish, the soo
 
 As a licensed insurance agent in Fredericksburg, I've helped hundreds of new Virginia families find affordable coverage during the biggest transition of their lives. I'll walk you through exactly what you need — no jargon, no pressure.
 
-- **Book a free consultation:** [Book with Cornerstone Life Insurance](https://calendly.com/harnordinc)
+- **Book a free consultation:** [Book with Cornerstone Life Insurance](https://calendly.com/fifi-cornerstonelifeinsure)
 - **Call:** (540) 424-1852
 - **Get a free quote** based on your specific situation
 
@@ -407,7 +407,7 @@ Final expense insurance is one of the most caring things you can do for your fam
 
 At Cornerstone Life Advisors, I specialize in helping Virginia seniors find the right final expense coverage at the best rate. Free consultation. No pressure. I'll be honest about what you need — and what you don't.
 
-- **Book a free consultation:** [Book with Cornerstone Life Insurance](https://calendly.com/harnordinc)
+- **Book a free consultation:** [Book with Cornerstone Life Insurance](https://calendly.com/fifi-cornerstonelifeinsure)
 - **Call:** (540) 424-1852
 - **Get a free quote** customized to your age and health
 
@@ -678,7 +678,7 @@ I've helped hundreds of Virginia residents over 50 find the right life insurance
 
 Free consultation. No pressure. Honest advice — even if the answer is "you don't need as much as you think."
 
-- **Book a free consultation:** [Book with Cornerstone Life Insurance](https://calendly.com/harnordinc)
+- **Book a free consultation:** [Book with Cornerstone Life Insurance](https://calendly.com/fifi-cornerstonelifeinsure)
 - **Call:** (540) 424-1852
 - **Get personalized quotes** based on your age, health, and goals
 
@@ -892,7 +892,7 @@ That's exactly what we do at Cornerstone Life Advisors. Free consultation, no pr
 
 If you're curious whether IUL could work for your family, the next step is simple:
 
-- **Book a free consultation** at [Book with Cornerstone Life Insurance](https://calendly.com/harnordinc)
+- **Book a free consultation** at [Book with Cornerstone Life Insurance](https://calendly.com/fifi-cornerstonelifeinsure)
 - **Call** (540) 424-1852
 - **Request a personalized illustration** — we'll run the numbers for your specific age, income, and goals
 

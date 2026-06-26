@@ -109,7 +109,7 @@ export default function QuoteCalculator() {
                   <p className="text-navy-700 text-xs"><strong>Important:</strong> Waiting 1 year could increase your premium by 8–12%. Lock in today's rate.</p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl transition-all hover:shadow-lg">
+                  <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl transition-all hover:shadow-lg">
                     <Calendar className="w-5 h-5" /> Book Free Consultation
                   </a>
                   <a href="tel:+15404241852" className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-navy-900 hover:bg-navy-800 text-white font-semibold rounded-xl transition-all">

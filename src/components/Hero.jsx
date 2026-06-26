@@ -97,7 +97,7 @@ export default function Hero() {
                       <CheckCircle className="w-12 h-12 text-green-500 mx-auto mb-3" />
                       <h3 className="font-display text-xl font-bold text-navy-900 mb-2">Got It!</h3>
                       <p className="text-navy-500 text-sm mb-4">I'll send your personalized estimate within a few hours.</p>
-                      <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl text-sm">
+                      <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl text-sm">
                         Or Book a Call Now <ArrowRight className="w-4 h-4" />
                       </a>
                     </div>

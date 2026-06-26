@@ -50,7 +50,7 @@ export default function LeadMagnetForm({ guide, compact = false }) {
         <p className="text-navy-400 text-xs mt-4">
           Questions?{' '}
           <a
-            href="https://calendly.com/harnordinc"
+            href="https://calendly.com/fifi-cornerstonelifeinsure"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gold-600 font-semibold"

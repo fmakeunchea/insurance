@@ -13,7 +13,7 @@ export default function AnnouncementBar() {
           <span className="hidden sm:inline">Limited: </span>
           <strong>Only 7 free consultation slots left this week</strong>
         </span>
-        <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="shrink-0 inline-flex items-center gap-1.5 bg-white text-gold-700 font-bold text-xs px-3 py-1 rounded-full hover:bg-gold-50">
+        <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="shrink-0 inline-flex items-center gap-1.5 bg-white text-gold-700 font-bold text-xs px-3 py-1 rounded-full hover:bg-gold-50">
           <Phone className="w-3 h-3" /> Book Now
         </a>
         <button onClick={() => setVisible(false)} className="absolute right-3 top-1/2 -translate-y-1/2 text-white/70 hover:text-white">

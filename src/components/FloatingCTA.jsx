@@ -19,7 +19,7 @@ export default function FloatingCTA() {
           <a href="/#quote" className="flex-1 flex items-center justify-center gap-2 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl text-sm">
             <Calculator className="w-4 h-4" /> Free Quote
           </a>
-          <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 py-3 bg-navy-900 hover:bg-navy-800 text-white font-semibold rounded-xl text-sm">
+          <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 py-3 bg-navy-900 hover:bg-navy-800 text-white font-semibold rounded-xl text-sm">
             <Calendar className="w-4 h-4" /> Book Call
           </a>
           <a href="tel:+15404241852" className="w-12 flex items-center justify-center bg-green-500 hover:bg-green-600 text-white rounded-xl">

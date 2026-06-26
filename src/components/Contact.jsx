@@ -49,7 +49,7 @@ export default function Contact() {
                 </div>
               ))}
             </div>
-            <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 w-full py-4 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl transition-all">
+            <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 w-full py-4 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl transition-all">
               <Calendar className="w-5 h-5" /> Book a Free Consultation
             </a>
           </div>

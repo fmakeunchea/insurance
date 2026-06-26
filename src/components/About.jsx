@@ -21,7 +21,7 @@ export default function About() {
             <p>I'm Fifi Makeunchea, a licensed insurance agent serving clients in all 50 states. I chose this career because every family deserves clear, honest guidance when it comes to protecting the people they love.</p>
             <p>Over 12 years, I've helped 1,200+ families find the right coverage. I work with 15+ A-rated carriers — which means I shop the market for you, something a captive agent can't do. With 100% remote consultations by phone or video, geography is no longer a barrier to great coverage.</p>
           </div>
-          <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl transition-all mb-8">
+          <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl transition-all mb-8">
             <Calendar className="w-4 h-4" /> Book a Free Consultation
           </a>
           <div className="grid sm:grid-cols-3 gap-4">

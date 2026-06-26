@@ -52,7 +52,7 @@ export default function QuickForm() {
               <CheckCircle className="w-14 h-14 text-green-500 mx-auto mb-4" />
               <h3 className="font-display text-2xl font-bold text-navy-900 mb-2">You're All Set!</h3>
               <p className="text-navy-500 mb-6">I'll review your needs and reach out with a personalized recommendation.</p>
-              <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl">
+              <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-xl">
                 Want Faster? Book a Call <ArrowRight className="w-4 h-4" />
               </a>
             </div>

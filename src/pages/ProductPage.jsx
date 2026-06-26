@@ -20,7 +20,7 @@ export default function ProductPage() {
       window.open(product.checkoutUrl, '_blank');
     } else {
       alert('Checkout coming soon! For now, book a free consultation and I\'ll send you the guide personally.');
-      window.open('https://calendly.com/harnordinc', '_blank');
+      window.open('https://calendly.com/fifi-cornerstonelifeinsure', '_blank');
     }
   };
 
@@ -141,7 +141,7 @@ export default function ProductPage() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-display text-2xl font-bold text-white mb-3">Want Personalized Help?</h2>
           <p className="text-navy-300 mb-8">Book a free consultation and I'll walk you through everything in person.</p>
-          <a href="https://calendly.com/harnordinc" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-xl">
+          <a href="https://calendly.com/fifi-cornerstonelifeinsure" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold rounded-xl">
             Book Free Consultation <ArrowRight className="w-5 h-5" />
           </a>
         </div>
