@@ -35,13 +35,14 @@ export default function Hero() {
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.4rem] xl:text-6xl font-bold text-white leading-[1.08] mb-6">
-              Protecting Families Nationwide with Life Insurance That{' '}
-              <span className="text-gold-400">Builds Wealth</span>
+              Make Sure Your Family Is{' '}
+              <span className="text-gold-400">Financially Protected</span> — No Matter What Happens
             </h1>
 
             <p className="text-lg text-navy-200 leading-relaxed mb-6 max-w-xl mx-auto lg:mx-0">
-              From affordable term life to IUL cash-value strategies — I compare 15+ A-rated carriers
-              to find you the best coverage at the lowest rate. 100% remote — serving clients in all 50 states.
+              Life insurance that keeps your family in their home, replaces your income, and protects
+              your children's future. Personalized guidance from a licensed advisor serving families in
+              all 50 states — no pressure, no obligation.
             </p>
 
             {/* Mobile headshot */}
