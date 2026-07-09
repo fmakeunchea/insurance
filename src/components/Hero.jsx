@@ -19,8 +19,7 @@ export default function Hero() {
             </div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.4rem] xl:text-6xl font-bold text-white leading-[1.08] mb-6">
-              Make Sure Your Family Is{' '}
-              <span className="text-gold-400">Financially Protected</span> — No Matter What Happens
+              Could Your Family <span className="text-gold-400">Keep the House</span> If Your Income Stopped Tomorrow?
             </h1>
 
             <p className="text-lg text-navy-200 leading-relaxed mb-6 max-w-xl mx-auto lg:mx-0">
