@@ -1,5 +1,236 @@
 export const blogPosts = [
   {
+    slug: 'no-medical-exam-life-insurance-guide',
+    title: 'No Medical Exam Life Insurance: How It Works & Who Qualifies (2026)',
+    excerpt: 'You can get real life insurance coverage without needles, doctors, or a month-long wait. Here\'s exactly how no-exam policies work, who qualifies, and what they cost in 2026.',
+    category: 'Buying Guide',
+    readTime: '9 min read',
+    date: 'July 8, 2026',
+    image: null,
+    content: `
+## What Is No Medical Exam Life Insurance?
+
+No medical exam life insurance is exactly what it sounds like: a real life insurance policy you can qualify for **without a paramedic visit, blood draw, or urine sample.**
+
+Instead of a physical exam, the insurance company approves you based on a short health questionnaire and instant data checks (prescription history, motor vehicle records, and public databases). For many healthy applicants, this means **approval in minutes to a few days** — instead of the 4–6 weeks a traditional policy can take.
+
+It's the single biggest reason people who "never got around to it" finally get covered: it removes the two things they dread most — the needle and the wait.
+
+## How Is It Different From a Traditional Policy?
+
+Traditional (fully underwritten) life insurance requires a medical exam so the carrier can price your policy as precisely as possible. That extra step often earns healthy applicants the **lowest possible rate** — but it takes time and effort.
+
+No-exam policies trade a little bit of that pricing precision for **speed and convenience.**
+
+| Feature | Traditional (Fully Underwritten) | No Medical Exam |
+|---------|----------------------------------|-----------------|
+| Medical exam | Required (blood, urine, vitals) | Not required |
+| Approval time | 4–6 weeks | Minutes to a few days |
+| Best possible rate | Yes | Slightly higher for some |
+| Max coverage | $5M+ | Up to $2–3M (varies) |
+| Best for | Maximizing coverage per dollar | Speed, convenience, needle-averse |
+
+**The myth worth killing:** no-exam does *not* automatically mean expensive. For healthy applicants, modern "accelerated underwriting" policies are often priced within a few dollars of a fully underwritten policy — you skip the exam and still get a great rate.
+
+## The 4 Types of No-Exam Coverage
+
+Not all no-exam policies are the same. Knowing the difference is what keeps you from overpaying.
+
+### 1. Accelerated Underwriting
+The gold standard of no-exam coverage. You answer health questions, the carrier checks your data instantly, and healthy applicants get **near-traditional rates with no exam.** Coverage up to $1–3 million. Best for healthy people under 60.
+
+### 2. Simplified Issue
+A short health questionnaire, no exam, quick approval. Rates are a bit higher than accelerated underwriting, but it's a great fit if you have minor health issues or want a fast decision. Typical coverage: $25,000–$500,000.
+
+### 3. Guaranteed Issue
+**No health questions at all** — approval is guaranteed within the eligible age range (usually 50–85). Higher premiums and lower coverage ($5,000–$25,000), plus a 2-year waiting period before the full benefit applies. Best for people with serious health conditions who can't qualify elsewhere.
+
+### 4. Group / Employer No-Exam
+Coverage through your job with no exam. Convenient, but usually only 1–2x your salary and **you lose it if you leave the job.** Treat it as a bonus, not your real plan.
+
+## Who Qualifies for No Medical Exam Life Insurance?
+
+You're likely a strong candidate for the best no-exam rates if you're:
+
+- **Under 60** and in reasonably good health
+- A **non-smoker** (or willing to answer honestly if you are)
+- Free of major recent health events (no recent heart attack, stroke, or active cancer treatment)
+- Looking for coverage in the **$100,000–$2,000,000** range
+
+Even if you have well-managed conditions — controlled Type 2 diabetes, treated high blood pressure, high cholesterol — you can often still qualify for simplified issue coverage. And if your health is more complicated, guaranteed issue is a safety net that accepts nearly everyone in the age range.
+
+## What Does It Cost in 2026?
+
+Here are typical monthly rates for a **20-year, $500,000 no-exam term policy** for a healthy non-smoker:
+
+| Age | Male | Female |
+|-----|------|--------|
+| 30 | $24/mo | $20/mo |
+| 35 | $29/mo | $24/mo |
+| 40 | $42/mo | $35/mo |
+| 45 | $68/mo | $54/mo |
+| 50 | $112/mo | $86/mo |
+
+*Rates are estimates for Preferred health and vary by carrier, state, and health profile.*
+
+Notice how close these are to fully underwritten rates. For most healthy people, the "convenience premium" for skipping the exam is small — and often zero.
+
+## The Catch: When You Should NOT Choose No-Exam
+
+An honest agent will tell you when to skip it:
+
+- **You want maximum coverage per dollar and don't mind the exam.** If you're young and healthy, a fully underwritten policy may save you a little each month over 20–30 years.
+- **You need more than $2–3 million in coverage.** No-exam limits may not be enough.
+- **You have a complex health history that's improving.** Sometimes a full exam actually *helps* your rate by proving your current good health.
+
+The right choice depends on your age, health, and how fast you need coverage — which is exactly what a free consultation sorts out in about 20 minutes.
+
+## How to Apply (Start to Finish in Days)
+
+1. **Quick needs assessment** — figure out how much coverage you actually need (a simple formula, not a guess).
+2. **Answer health questions** — usually online or over the phone, 10–15 minutes.
+3. **Instant data check** — the carrier verifies your info behind the scenes.
+4. **Decision** — many healthy applicants are approved on the spot or within a few days.
+5. **Policy active** — sign, make your first payment, and your family is protected.
+
+No labs. No waiting a month to find out if you're covered.
+
+## Should You Get No-Exam Coverage?
+
+For most people who have been putting off life insurance, no-exam coverage is the answer to "I never got around to it." It removes the friction, and for healthy applicants the rates are excellent.
+
+The only real mistake is continuing to wait. Every year you delay raises your rate — and a change in health can take the easy options off the table.
+
+## Get Covered Without the Needle
+
+As an independent agent licensed in **all 50 states**, I shop 15+ A-rated carriers to find you the fastest, most affordable no-exam policy for your age and health — and I'll tell you honestly if a traditional policy would serve you better.
+
+- **Book a free consultation:** [Book with Cornerstone Life Insurance](https://calendly.com/fifi-cornerstonelifeinsure)
+- **Call:** (540) 424-1852
+- **Get a free quote** tailored to your situation — no pressure, no obligation
+
+*This article is for educational purposes only and does not constitute financial or insurance advice. Availability, rates, and coverage vary by carrier, state, age, and health. Consult a licensed agent for personalized recommendations.*
+`,
+  },
+  {
+    slug: 'life-insurance-for-young-families-guide',
+    title: 'Life Insurance for Young Families: How Much You Need & What It Costs (2026)',
+    excerpt: 'A simple, no-jargon guide for young families anywhere in the U.S. — how much coverage you actually need, what it really costs, and the mistakes that leave families short.',
+    category: 'Family',
+    readTime: '8 min read',
+    date: 'July 2, 2026',
+    image: null,
+    content: `
+## Why Young Families Need Life Insurance the Most
+
+Here's the uncomfortable math: the younger your family, the *more* is riding on your income. A 30-year-old parent may have 20+ years of earnings, a mortgage, and children who depend on them completely.
+
+Life insurance is simply how you replace that income if you're not there to earn it. It's the difference between your family keeping their home and their plans — or losing both during the worst moment of their lives.
+
+The good news, and it surprises almost everyone: **it's cheap when you're young.** A healthy 30-year-old can protect their family with half a million dollars of coverage for roughly the price of a couple of streaming subscriptions.
+
+## How Much Coverage Does a Young Family Need?
+
+The quick rule of thumb is **10–12x your annual income.** Earn $60,000? Start around $600,000–$720,000.
+
+But the better method planners use is the **DIME formula**, because it accounts for your real obligations:
+
+- **D — Debt:** car loans, credit cards, student loans
+- **I — Income:** your annual income × the years your family would need support
+- **M — Mortgage:** your remaining balance, so they keep the home
+- **E — Education:** roughly $100,000–$200,000 per child for college
+
+### Real Example: A Young Family Earning $70,000
+
+| Need | Amount |
+|------|--------|
+| Mortgage | $300,000 |
+| Car loans + credit cards | $30,000 |
+| Income replacement (15 years × $50,000) | $750,000 |
+| College for 2 kids | $250,000 |
+| Final expenses | $15,000 |
+| **Total coverage needed** | **$1,345,000** |
+
+That number looks huge — until you see the price tag. A healthy 30-year-old can get **$1 million of 20-year term for around $33/month.**
+
+## What It Actually Costs in 2026
+
+Typical monthly rates for a **20-year term policy**, healthy non-smoker:
+
+### $500,000 Coverage
+
+| Age | Male | Female |
+|-----|------|--------|
+| 28 | $21/mo | $17/mo |
+| 30 | $22/mo | $18/mo |
+| 33 | $25/mo | $20/mo |
+| 36 | $29/mo | $24/mo |
+
+### $1,000,000 Coverage
+
+| Age | Male | Female |
+|-----|------|--------|
+| 28 | $31/mo | $25/mo |
+| 30 | $33/mo | $27/mo |
+| 33 | $38/mo | $31/mo |
+| 36 | $44/mo | $37/mo |
+
+*Estimates for Preferred health; actual rates vary by carrier, state, and profile.*
+
+Every year you wait adds roughly 4–8% to your premium — so today is always the cheapest day to lock in a rate.
+
+## Term Life Is Almost Always the Right Start
+
+For young families, **term life insurance** is the workhorse:
+
+- **Maximum coverage, minimum cost** during the exact years your kids depend on you
+- **It matches the need** — pick a term (20, 25, or 30 years) that covers your kids to independence
+- **It frees up cash** for the other things young families need: emergency savings, retirement, college funds
+
+You can always add permanent coverage (whole life or IUL) later for lifetime needs. But the priority right now is getting enough protection in place affordably — and term does that.
+
+## The Mistake That Wrecks Young Families: Skipping the Stay-at-Home Parent
+
+If one parent stays home, it's tempting to think they don't need coverage because they don't earn a paycheck. That's backwards.
+
+If the stay-at-home parent passes away, the working parent suddenly has to *pay* for everything that parent did for free:
+
+| Service | Typical Annual Cost |
+|---------|--------------------|
+| Full-time childcare | $18,000–$24,000 |
+| Housekeeping & meals | $12,000 |
+| Transportation & errands | $5,000 |
+| **Total replacement cost** | **$35,000+/year** |
+
+Over the child-raising years, that's hundreds of thousands of dollars — while the surviving parent also grieves and works full time. **Every stay-at-home parent should carry at least $500,000 in term coverage.** Rates are often even lower, since pricing is based on age and health, not income.
+
+## 4 Mistakes to Avoid
+
+1. **Relying only on work coverage.** Employer plans usually cover just 1–2x your salary and vanish if you change jobs. Treat it as a bonus, not your plan.
+2. **Choosing a term that's too short.** If your baby is a newborn, a 20-year term ends while they may still be in college. Consider 25 or 30 years.
+3. **Naming a child as beneficiary.** This triggers probate court. Name your spouse, with children as contingent beneficiaries — and set up a will with a guardian.
+4. **Waiting for "the right time."** Life with young kids never settles down, and your health won't get younger. The best rate is the one you lock in today.
+
+## Your Simple 3-Step Plan
+
+1. **Calculate your number** using the DIME formula (or let me do it with you in 20 minutes).
+2. **Insure both parents** — including the stay-at-home parent.
+3. **Lock in a term policy** long enough to cover your youngest child to independence.
+
+All three can be done in a couple of weeks — often with no medical exam.
+
+## Let's Protect Your Family
+
+I'm an independent agent licensed in **all 50 states**, and I help young families find the right coverage without the jargon or the pressure. I shop 15+ A-rated carriers so you never overpay, and I'll give you an exact number tailored to your family — for free.
+
+- **Book a free consultation:** [Book with Cornerstone Life Insurance](https://calendly.com/fifi-cornerstonelifeinsure)
+- **Call:** (540) 424-1852
+- **Get a free quote** based on your family's specific needs
+
+*This article is for educational purposes only and does not constitute financial or insurance advice. Rates and coverage vary by carrier, state, age, and health. Consult a licensed agent for personalized recommendations.*
+`,
+  },
+  {
     slug: 'life-insurance-for-new-parents-virginia',
     title: 'Life Insurance for New Parents in Virginia: The 2026 Guide',
     excerpt: 'Having a baby changes everything — including how much life insurance you need. Here\'s what every new Virginia parent should know before the baby arrives.',

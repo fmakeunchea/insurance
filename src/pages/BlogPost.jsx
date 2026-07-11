@@ -1,13 +1,24 @@
 import { useParams, Link, Navigate, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, Clock, Calendar, ArrowRight, Download, CheckCircle } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
 import { freeGuides } from '../data/freeGuides';
 import LeadMagnetForm from '../components/LeadMagnetForm';
 import SEO from '../components/SEO';
 
+const SITE = 'https://cornerstonelifeinsure.com';
+
+// Convert a human date like "July 8, 2026" to ISO (YYYY-MM-DD) for structured data.
+function toISODate(dateStr) {
+  const d = new Date(dateStr);
+  return isNaN(d) ? undefined : d.toISOString().split('T')[0];
+}
+
 // Match each blog post to its best-fit lead magnet
 const GUIDE_FOR_POST = {
+  'no-medical-exam-life-insurance-guide': 'life-insurance-buying-guide',
+  'life-insurance-for-young-families-guide': 'family-protection-checklist',
   'what-is-iul-insurance-virginia-guide': 'iul-wealth-blueprint-sample',
   'life-insurance-for-new-parents-virginia': 'family-protection-checklist',
   'final-expense-insurance-virginia-guide': 'life-insurance-buying-guide',
@@ -120,6 +131,28 @@ export default function BlogPost() {
 
   const others = blogPosts.filter((p) => p.slug !== slug).slice(0, 2);
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: toISODate(post.date),
+    dateModified: toISODate(post.date),
+    author: {
+      '@type': 'Person',
+      name: 'Fifi Makeunchea',
+      jobTitle: 'Licensed Insurance Agent',
+      url: SITE,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Cornerstone Life Advisors',
+      logo: { '@type': 'ImageObject', url: `${SITE}/banner.png` },
+    },
+    image: `${SITE}/banner.png`,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}/blog/${post.slug}` },
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <SEO
@@ -127,6 +160,9 @@ export default function BlogPost() {
         description={post.excerpt}
         path={`/blog/${post.slug}`}
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
+      </Helmet>
       <section className="bg-navy-950 pt-32 pb-14">
         <div className="max-w-3xl mx-auto px-4">
           <button onClick={() => navigate('/blog')} className="inline-flex items-center gap-2 text-navy-400 hover:text-gold-400 text-sm mb-6">

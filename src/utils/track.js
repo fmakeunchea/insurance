@@ -1,4 +1,4 @@
-// Fires conversion events to Google Analytics + Meta Pixel + TikTok Pixel.
+// Fires conversion events to Google Analytics + Meta Pixel.
 // Call these after key funnel actions so you can measure:
 //   Visitors → Quiz Starts → Leads → Bookings.
 
@@ -7,7 +7,6 @@ export function trackLandingView(source = 'Start Landing') {
     window.gtag('event', 'page_view', { event_category: 'Landing', event_label: source });
   }
   if (window.fbq) window.fbq('track', 'ViewContent', { content_name: source });
-  if (window.ttq) window.ttq.track('ViewContent', { content_name: source });
 }
 
 export function trackLead(source, data = {}) {
@@ -28,14 +27,6 @@ export function trackLead(source, data = {}) {
       ...data,
     });
   }
-
-  // TikTok Pixel event
-  if (window.ttq) {
-    window.ttq.track('SubmitForm', {
-      content_name: source,
-      ...data,
-    });
-  }
 }
 
 export function trackQuote(source, data = {}) {
@@ -52,12 +43,6 @@ export function trackQuote(source, data = {}) {
       ...data,
     });
   }
-  if (window.ttq) {
-    window.ttq.track('ClickButton', {
-      content_name: source,
-      ...data,
-    });
-  }
 }
 
 export function trackBooking() {
@@ -69,8 +54,5 @@ export function trackBooking() {
   }
   if (window.fbq) {
     window.fbq('track', 'Schedule');
-  }
-  if (window.ttq) {
-    window.ttq.track('Contact', { content_name: 'Calendly Booking' });
   }
 }
