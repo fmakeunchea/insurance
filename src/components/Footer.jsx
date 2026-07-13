@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { cities } from '../data/cities';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -63,10 +64,22 @@ export default function Footer() {
               <span className="text-gold-300 text-sm font-semibold">Licensed in All 50 States</span>
             </div>
           </div>
-          <h4 className="font-semibold text-white text-sm mb-3 text-center">Service Areas Include</h4>
+          <h4 className="font-semibold text-white text-sm mb-3 text-center">Virginia Service Areas</h4>
+          <div className="flex flex-wrap justify-center gap-2 mb-5">
+            {cities.map(c => (
+              <Link
+                key={c.slug}
+                to={`/life-insurance/${c.slug}`}
+                className="bg-navy-800 text-navy-300 text-xs px-3 py-1.5 rounded-full hover:bg-navy-700 hover:text-gold-400 transition-colors"
+              >
+                Life Insurance in {c.city}, {c.state}
+              </Link>
+            ))}
+          </div>
+          <h4 className="font-semibold text-white text-sm mb-3 text-center">Also Serving</h4>
           <div className="flex flex-wrap justify-center gap-2">
-            {['Virginia', 'California', 'Texas', 'Florida', 'New York', 'Illinois', 'Pennsylvania', 'Ohio', 'Georgia', 'North Carolina', '+ 40 more states'].map(loc => (
-              <span key={loc} className="bg-navy-800 text-navy-300 text-xs px-3 py-1.5 rounded-full hover:bg-navy-700 hover:text-gold-400 transition-colors cursor-default">
+            {['California', 'Texas', 'Florida', 'New York', 'Illinois', 'Pennsylvania', 'Ohio', 'Georgia', 'North Carolina', '+ 40 more states'].map(loc => (
+              <span key={loc} className="bg-navy-800 text-navy-300 text-xs px-3 py-1.5 rounded-full cursor-default">
                 {loc}
               </span>
             ))}

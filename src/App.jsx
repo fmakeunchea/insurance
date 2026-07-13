@@ -30,6 +30,7 @@ import ForEngineers from './pages/ForEngineers';
 import Book from './pages/Book';
 import FamilyProtectionQuiz from './pages/FamilyProtectionQuiz';
 import StartLanding from './pages/StartLanding';
+import CityPage from './pages/CityPage';
 
 // Distraction-free landing routes: no nav, footer, popups, or floating widgets.
 const BARE_ROUTES = ['/start', '/protect-my-family', '/family-score'];
@@ -72,6 +73,7 @@ function Layout() {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/life-insurance/:slug" element={<CityPage />} />
         <Route path="/services/term-life" element={<TermLife />} />
         <Route path="/services/whole-life" element={<WholeLife />} />
         <Route path="/services/iul" element={<WealthIUL />} />

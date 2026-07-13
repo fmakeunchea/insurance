@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { blogPosts } from '../src/data/blogPosts.js';
 import { products } from '../src/data/products.js';
+import { cities } from '../src/data/cities.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SITE = 'https://cornerstonelifeinsure.com';
@@ -20,6 +21,8 @@ const urls = [
   { loc: '/book', priority: '0.9', changefreq: 'monthly' },
   { loc: '/quiz', priority: '0.9', changefreq: 'monthly' },
   { loc: '/start', priority: '0.9', changefreq: 'monthly' },
+  // Local landing pages target the city queries we actually surface for in Search Console.
+  ...cities.map(c => ({ loc: `/life-insurance/${c.slug}`, priority: '0.9', changefreq: 'monthly' })),
   ...blogPosts.map(p => ({ loc: `/blog/${p.slug}`, priority: '0.7', changefreq: 'monthly' })),
   ...products.map(p => ({ loc: `/shop/${p.slug}`, priority: '0.8', changefreq: 'monthly' })),
 ];
