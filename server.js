@@ -70,6 +70,10 @@ const META = {
     description:
       'Find out how protected your family really is. Take the free 2-minute Family Protection Score quiz and get a personalized coverage recommendation.',
   },
+  '/privacy': {
+    title: 'Privacy Policy' + SUFFIX,
+    description: 'How Cornerstone Life Advisors collects, uses, and protects your personal information.',
+  },
   '/start': {
     title: 'Protect Your Family — Get Started' + SUFFIX,
     description:

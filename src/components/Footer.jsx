@@ -96,7 +96,7 @@ export default function Footer() {
 
       <div className="border-t border-navy-800">
         <div className="max-w-7xl mx-auto px-4 py-6 text-center sm:text-left">
-          <p className="text-navy-400 text-xs">&copy; {year} Cornerstone Life Advisors. All rights reserved. Fifi Makeunchea, Licensed Insurance Agent in all 50 United States.</p>
+          <p className="text-navy-400 text-xs">&copy; {year} Cornerstone Life Advisors. All rights reserved. Fifi Makeunchea, Licensed Insurance Agent in all 50 United States. <Link to="/privacy" className="hover:text-gold-400 underline">Privacy Policy</Link></p>
         </div>
       </div>
     </footer>
