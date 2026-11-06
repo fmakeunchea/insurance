@@ -17,7 +17,7 @@ export default function TermLife() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Term Life Insurance in Virginia — Rates from $13/month"
+        title="Term Life Insurance in Virginia — Rates from $21/month"
         description="Affordable term life insurance in Virginia. $500K coverage from $21/month for healthy 30-year-olds. Compare rates from 15+ A-rated carriers with Fifi Makeunchea."
         path="/services/term-life"
       />

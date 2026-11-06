@@ -31,6 +31,7 @@ import Book from './pages/Book';
 import FamilyProtectionQuiz from './pages/FamilyProtectionQuiz';
 import StartLanding from './pages/StartLanding';
 import CityPage from './pages/CityPage';
+import NotFound from './pages/NotFound';
 
 // Distraction-free landing routes: no nav, footer, popups, or floating widgets.
 const BARE_ROUTES = ['/start', '/protect-my-family', '/family-score'];
@@ -87,6 +88,7 @@ function Layout() {
         <Route path="/start" element={<StartLanding />} />
         <Route path="/protect-my-family" element={<StartLanding />} />
         <Route path="/family-score" element={<StartLanding />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       {!bare && <Footer />}
       {!bare && <ExitPopup />}

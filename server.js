@@ -26,7 +26,7 @@ const DEFAULT_DESC =
 const META = {
   '/': { title: DEFAULT_TITLE, description: DEFAULT_DESC },
   '/services/term-life': {
-    title: 'Term Life Insurance in Virginia — Rates from $13/month' + SUFFIX,
+    title: 'Term Life Insurance in Virginia — Rates from $21/month' + SUFFIX,
     description:
       'Affordable term life insurance in Virginia. $500K coverage from $21/month for healthy 30-year-olds. Compare rates from 15+ A-rated carriers.',
   },
@@ -90,6 +90,19 @@ for (const c of cities) {
   };
 }
 
+// Ad/landing aliases render the same page as their target. Point their canonical
+// at the target so Google doesn't treat them as duplicate pages.
+const ALIASES = {
+  '/family-protection-score': '/quiz',
+  '/protect-my-family': '/start',
+  '/family-score': '/start',
+};
+
+const NOT_FOUND = {
+  title: 'Page Not Found' + SUFFIX,
+  description: DEFAULT_DESC,
+};
+
 const esc = (s) =>
   String(s)
     .replace(/&/g, '&amp;')
@@ -100,14 +113,14 @@ const esc = (s) =>
 const template = readFileSync(join(DIST, 'index.html'), 'utf-8');
 
 function renderHead(pathname) {
-  const clean = pathname.replace(/\/+$/, '') || '/';
-  // Canonical is derived from the real path, so even a route with no META entry
-  // gets its own canonical instead of falling back to the homepage.
+  const path = pathname.replace(/\/+$/, '') || '/';
+  const clean = ALIASES[path] || path;
+  const found = clean in META;
   const canonical = SITE + (clean === '/' ? '/' : clean);
-  const meta = META[clean] || { title: DEFAULT_TITLE, description: DEFAULT_DESC };
+  const meta = found ? META[clean] : NOT_FOUND;
 
   // Function replacements: values contain $ and & which are special in replace().
-  return template
+  const html = template
     .replace(/<title>[\s\S]*?<\/title>/, () => `<title>${esc(meta.title)}</title>`)
     .replace(
       /<meta name="description" content="[^"]*"\s*\/?>/,
@@ -128,15 +141,37 @@ function renderHead(pathname) {
     .replace(
       /<meta property="og:description" content="[^"]*"\s*\/?>/,
       () => `<meta property="og:description" content="${esc(meta.description)}" />`,
+    )
+    .replace(
+      /<meta name="twitter:title" content="[^"]*"\s*\/?>/,
+      () => `<meta name="twitter:title" content="${esc(meta.title)}" />`,
+    )
+    .replace(
+      /<meta name="twitter:description" content="[^"]*"\s*\/?>/,
+      () => `<meta name="twitter:description" content="${esc(meta.description)}" />`,
+    )
+    .replace(/<meta name="robots" content="[^"]*"\s*\/?>/, () =>
+      found
+        ? '<meta name="robots" content="index, follow" />'
+        : '<meta name="robots" content="noindex, follow" />',
     );
+
+  return { html, status: found ? 200 : 404 };
 }
 
+// Vite fingerprints everything in /assets, so those files never change in place
+// and can be cached for a year. Without this they were served with max-age=0.
+app.use(
+  '/assets',
+  express.static(join(DIST, 'assets'), { immutable: true, maxAge: '1y', index: false }),
+);
 // index:false so express.static doesn't serve raw index.html for "/" and bypass
 // the per-route head rewrite below.
-app.use(express.static(DIST, { index: false }));
+app.use(express.static(DIST, { index: false, maxAge: '1d' }));
 
 app.get('*', (req, res) => {
-  res.set('Content-Type', 'text/html').send(renderHead(req.path));
+  const { html, status } = renderHead(req.path);
+  res.status(status).set('Content-Type', 'text/html').send(html);
 });
 
 app.listen(process.env.PORT || 3000, () => console.log('Server running'));
