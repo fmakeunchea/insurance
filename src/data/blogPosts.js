@@ -1,5 +1,117 @@
 export const blogPosts = [
   {
+    slug: 'life-insurance-military-families-virginia',
+    title: 'Life Insurance for Military Families in Virginia: Is SGLI Enough? (2026)',
+    excerpt: 'Stationed at Quantico, Dahlgren, or Fort Belvoir? Here\'s what SGLI covers, where it falls short, what happens to your coverage when you leave the service, and when private life insurance makes sense.',
+    category: 'Military',
+    readTime: '9 min read',
+    date: 'November 6, 2026',
+    image: null,
+    content: `
+## Why Military Families Need to Think About This
+
+The Fredericksburg region is one of the most military-connected areas in the country. Between **Marine Corps Base Quantico**, **Naval Support Facility Dahlgren**, and **Fort Belvoir**, thousands of service members and their families live in Stafford, Spotsylvania, King George, and Fredericksburg.
+
+Most of them have **SGLI** (Servicemembers' Group Life Insurance) — and most assume that's all they need.
+
+For many families, SGLI is a great foundation. But it has real limits, and the biggest one shows up at the worst possible time: **when you leave the military.**
+
+## What SGLI Gives You
+
+SGLI is group life insurance for active-duty service members, Reservists, and National Guard members. It's one of the best deals in life insurance:
+
+- **Coverage up to $500,000**, in $50,000 increments
+- **About $31/month** for the full $500,000 (including the $1 TSGLI traumatic injury premium)
+- **No medical exam** and no health-based pricing
+- **Covers combat and deployment** — something not every private policy does
+
+Your family may also be covered through **FSGLI** (Family SGLI):
+
+- **Spouses:** up to $100,000 (but never more than the service member's own SGLI amount)
+- **Dependent children:** $10,000 each, at no cost
+
+*Rates and limits are set by the VA and can change. Always confirm current figures at va.gov.*
+
+## Where SGLI Falls Short
+
+### 1. $500,000 May Not Be Enough
+
+A common rule of thumb is **10–12 times your income**, plus your mortgage and your kids' future education costs.
+
+| Family Situation | Rough Coverage Need |
+|------------------|---------------------|
+| E-6 with spouse and 2 kids, Stafford home | $750K–$1M |
+| O-3 with spouse, 1 child, mortgage | $900K–$1.2M |
+| Dual-military couple, no kids | $250K–$500K each |
+| Single, no dependents | SGLI is often enough |
+
+If your family relies on your income, BAH, and future earning power, $500,000 can run out faster than you'd think — especially with Northern Virginia housing costs.
+
+### 2. Your Spouse's Coverage Is Capped at $100,000
+
+A stay-at-home parent provides childcare, transportation, and household management worth tens of thousands of dollars a year. If your spouse passed away, could you keep serving — with deployments, TDYs, and long duty days — without paying for full-time childcare?
+
+**$100,000 rarely covers that.** A private term policy on your spouse is often very affordable and fills the gap.
+
+### 3. SGLI Ends When You Leave
+
+This is the big one. SGLI coverage continues for **120 days after separation**, at no cost. After that, it's gone.
+
+Your options at that point:
+
+- **Convert to VGLI** (Veterans' Group Life Insurance)
+- **Buy private coverage**
+- **Go without** — the option too many veterans end up with by accident
+
+## VGLI vs. Private Life Insurance After Service
+
+VGLI lets you keep coverage after you leave. You can apply within **1 year and 120 days** of separation, and if you apply within the **first 240 days**, there are **no health questions.**
+
+That's valuable if you have a service-connected condition that would make private insurance expensive or hard to get.
+
+But VGLI has a catch: **premiums are based on your age and go up every 5 years.** What's affordable at 30 can become very expensive by 50 or 60.
+
+| | VGLI | Private Term Life |
+|---|------|-------------------|
+| Health questions | None if you apply within 240 days | Yes (exam or no-exam options) |
+| Price over time | Rises every 5 years | Locked for 10, 20, or 30 years |
+| Max coverage | Up to your SGLI amount | $1M+ available |
+| Best for | Veterans with health conditions | Healthy veterans who want locked-in rates |
+
+**For healthy veterans, a private 20- or 30-year term policy is often far cheaper over the long run.** For veterans with significant service-connected conditions, VGLI's guaranteed acceptance can be the smarter move.
+
+There's no one-size-fits-all answer — which is why it pays to compare **before** your 240-day window closes.
+
+## Can Active-Duty Members Buy Private Life Insurance?
+
+Yes. Many service members carry **SGLI plus a private term policy** to reach the coverage their family actually needs.
+
+A few things to know:
+
+- **War and aviation clauses:** Some policies limit payouts for deaths in combat or in military aviation. Many modern carriers don't have these exclusions — but some do, so read the fine print or work with an agent who checks for you.
+- **Deployment timing:** Some carriers won't issue a new policy if you have orders to deploy. **Apply before you get orders**, not after.
+- **Your rate is locked:** A healthy 30-year-old can lock in a **$500K 20-year term policy for around $21/month** — and that rate stays the same whether you're stationed at Quantico, Okinawa, or retired in Spotsylvania.
+
+## A Simple Plan for Military Families
+
+- **Keep SGLI.** It's inexpensive and covers combat.
+- **Add private term coverage** if your family needs more than $500,000.
+- **Cover your spouse** beyond the $100,000 FSGLI limit if they're home with the kids.
+- **Start planning 6–12 months before separation**, so you're not scrambling inside the 240-day window.
+- **Lock in private coverage while you're young and healthy** — it's the cheapest you'll ever see.
+
+## Talk It Through With a Local Agent
+
+I work with military families across Stafford, Spotsylvania, King George, and Fredericksburg. As an independent agent licensed in **all 50 states**, I compare 15+ A-rated carriers — including those without war exclusions — and I'll tell you honestly when VGLI is the better choice.
+
+- **Book a free consultation:** [Schedule a call](https://calendly.com/fifi-cornerstonelifeinsure)
+- **Call:** (540) 424-1852
+- **Not sure how much you need?** [Take the free 2-minute Family Protection Score quiz](/quiz)
+
+*This article is for educational purposes only and is not affiliated with or endorsed by the Department of Defense or the Department of Veterans Affairs. SGLI, FSGLI, and VGLI rules and rates are set by the VA and may change — confirm current details at va.gov. Private policy availability, rates, and exclusions vary by carrier, state, age, health, and military status.*
+`,
+  },
+  {
     slug: 'no-medical-exam-life-insurance-guide',
     title: 'No Medical Exam Life Insurance: How It Works & Who Qualifies (2026)',
     excerpt: 'You can get real life insurance coverage without needles, doctors, or a month-long wait. Here\'s exactly how no-exam policies work, who qualifies, and what they cost in 2026.',

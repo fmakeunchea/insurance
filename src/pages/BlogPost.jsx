@@ -17,6 +17,7 @@ function toISODate(dateStr) {
 
 // Match each blog post to its best-fit lead magnet
 const GUIDE_FOR_POST = {
+  'life-insurance-military-families-virginia': 'family-protection-checklist',
   'no-medical-exam-life-insurance-guide': 'life-insurance-buying-guide',
   'life-insurance-for-young-families-guide': 'family-protection-checklist',
   'what-is-iul-insurance-virginia-guide': 'iul-wealth-blueprint-sample',
@@ -110,11 +111,23 @@ function renderContent(content) {
   return elements;
 }
 
+// Supports **bold**, *italic*, and [text](url) links.
 function formatInline(text) {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\)|\*[^*]+\*)/g);
   return parts.map((part, i) => {
     if (part.startsWith('**') && part.endsWith('**')) {
       return <strong key={i} className="text-navy-900">{part.slice(2, -2)}</strong>;
+    }
+    const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (link) {
+      const [, label, href] = link;
+      if (href.startsWith('/')) {
+        return <Link key={i} to={href} className="text-gold-600 font-semibold underline hover:text-gold-500">{label}</Link>;
+      }
+      return <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="text-gold-600 font-semibold underline hover:text-gold-500">{label}</a>;
+    }
+    if (part.length > 2 && part.startsWith('*') && part.endsWith('*')) {
+      return <em key={i}>{part.slice(1, -1)}</em>;
     }
     return part;
   });
